@@ -8,7 +8,7 @@ export const HeroSection = () => {
   return (
     <div className=" min-h-screen w-full overflow-hidden py-32 md:py-48 lg:py-60 relative">
       <div className="absolute insert-0" style={{backgroundImage: `url(${grainImage.src})`,}}></div>
-      {/* <video src="/video/b_left.mp4" autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-20" /> */}
+      
       <div className="relative z-10 container">
         <div className="flex flex-col items-center">
           <Image src={imageJayaru} className="size-[300px]" alt="Jayaru Perera" /> 
