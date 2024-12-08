@@ -1,11 +1,15 @@
 import imageJayaru from "@/assets/images/imageJayaru.png";
 import Image from "next/image";
 import ArrowDown from '@/assets/icons/arrow-down.svg';
+import grainImage from "@/assets/images/grain.jpg";
+
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60">
-      <div className="container">
+    <div className=" min-h-screen w-full overflow-hidden py-32 md:py-48 lg:py-60 relative">
+      <div className="absolute insert-0" style={{backgroundImage: `url(${grainImage.src})`,}}></div>
+      {/* <video src="/video/b_left.mp4" autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-20" /> */}
+      <div className="relative z-10 container">
         <div className="flex flex-col items-center">
           <Image src={imageJayaru} className="size-[300px]" alt="Jayaru Perera" /> 
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
